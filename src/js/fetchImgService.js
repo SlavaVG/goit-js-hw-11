@@ -3,7 +3,7 @@ import axios from 'axios';
 import Notiflix from 'notiflix';
 
 const BASE_URL = 'https://pixabay.com/api/';
-const KEY = '24722659-718c1d8bf5a51ddaf817fd145';
+const KEY = '25758200-bb30ff11496cc8278e6d7deb3';
 const per_page = 40;
 const searchParams = new URLSearchParams({
     image_type: 'photo',

@@ -67,7 +67,6 @@ async function render() {
     lightbox.refresh();
     smoothScroll();
 
-   
 
     if (searchImgService.numberImg >= searchImgService.totalHits) {
         return Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
