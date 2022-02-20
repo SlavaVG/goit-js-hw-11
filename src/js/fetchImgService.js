@@ -22,7 +22,6 @@ export default class SearchImgService {
 
     async fetchImg() {
         const url = `${BASE_URL}?key=${KEY}&q=${this.searchQuery}&${searchParams}&page=${this.page}`
-    
         try {
             const response = await axios.get(url)
             if (response.data.hits.length === 0) {

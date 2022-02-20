@@ -1,3 +1,7 @@
+:root {
+  --const-hieght: 100px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -16,14 +20,7 @@ img {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: -15px;
-    margin-left: -15px; */
 }
-
-/* .photo-card {
-    display: flex;
-    flex-direction: column;
-} */
 
 .gallery__link {
   color: black;
@@ -51,7 +48,11 @@ img {
   margin-bottom: 10px;
   padding: 20px;
   background-color: rgb(42, 42, 173);
-  text-align: center;
+  height: var(--const-hieght);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .load-more {
@@ -66,4 +67,11 @@ img {
 
 .info-item {
   margin-right: 5px;
+}
+
+.header-img {
+  height: var(--const-hieght);
+  position: absolute;
+  top: 0px;
+  left: 15px;
 }

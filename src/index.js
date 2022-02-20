@@ -24,6 +24,10 @@ function onSubmitSearch(event) {
     
     const searchQuery = event.currentTarget.elements.searchQuery.value.replaceAll(' ', '+');
 
+    if (searchQuery.trim() === '') {
+        return Notiflix.Notify.failure("Sorry, I didnt get you. Please try again.");
+    }
+        
     searchImgService.query = searchQuery;
 
     remove()
